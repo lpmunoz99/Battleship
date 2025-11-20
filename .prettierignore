@@ -1,0 +1,18 @@
+# Node dependencies
+node_modules/
+
+# Webpack output / builds
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Ignore config files / docs
+package-lock.json
+*.md
+*.html
+*.css
+
+# ESLint config file
+eslint.config.mjs
