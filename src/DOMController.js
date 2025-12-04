@@ -215,6 +215,7 @@ export function DOMController(players, gameboards) {
         // RENDER BOTH BOARDS
         gameboards.forEach((element, index) => {
             const board = element.getBoard();
+            console.log(board);
 
             for (let i = 0; i < board.length; i++) {
                 for (let j = 0; j < board[0].length; j++) {
@@ -229,7 +230,7 @@ export function DOMController(players, gameboards) {
                     // ENEMY BOARD
                     if (index === 1) {
                         cell.classList.add('active');
-                        if (board[i][j] === 'hit' || board[i][j] === 'miss') {
+                        if (board[i][j] === 'hit' || board[i][j] === 'miss' || board[i][j] === null) {
                             cell.dataset.id = board[i][j];
                         }
                         cell.addEventListener('click', () => callback(i, j));
