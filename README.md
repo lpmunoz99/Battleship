@@ -1,0 +1,1 @@
+This is the twelfth project of Javascript curriculum through The Odin Project, the game Battleship where knowledge of TDD with jest is solidified, but this time in a bigger project along with the use of sets.
