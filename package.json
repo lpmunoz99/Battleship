@@ -1,9 +1,10 @@
 {
-    "name": "project-starterstarterfull2",
+    "name": "battleship",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
         "test": "jest",
+        "watch": "jest --watch",
         "start": "webpack serve --open --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js",
         "deploy": "git subtree push --prefix dist origin gh-pages",
