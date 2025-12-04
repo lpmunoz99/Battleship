@@ -316,7 +316,7 @@ body{
     cursor: pointer;
 }
 
-.cell.active[data-id="null"]:hover{
+.cell.active:not([data-id="miss"]):not([data-id="hit"]):hover{
     background-image: url('../images/target.svg');
     background-size: 70% 80%;
     background-repeat: no-repeat;
